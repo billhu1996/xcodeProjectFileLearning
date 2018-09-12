@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A94ED9E72148C253008CAAC5 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A94ED9E62148C253008CAAC5 /* libc++.tbd */; };
+		A94ED9EC2148F4D6008CAAC5 /* ZegoAVKit2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94ED9EB2148F4D6008CAAC5 /* ZegoAVKit2.framework */; };
+		A94ED9ED2148F4D6008CAAC5 /* ZegoAVKit2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A94ED9EB2148F4D6008CAAC5 /* ZegoAVKit2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A9CB295821461757004963C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CB295721461757004963C1 /* AppDelegate.m */; };
 		A9CB295B21461757004963C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CB295A21461757004963C1 /* ViewController.m */; };
 		A9CB295E21461757004963C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CB295C21461757004963C1 /* Main.storyboard */; };
@@ -16,8 +18,23 @@
 		A9CB296621461759004963C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CB296521461759004963C1 /* main.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A94ED9EE2148F4D6008CAAC5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A94ED9ED2148F4D6008CAAC5 /* ZegoAVKit2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A94ED9E62148C253008CAAC5 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		A94ED9EB2148F4D6008CAAC5 /* ZegoAVKit2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZegoAVKit2.framework; path = singleSmallLittleProject/ZegoAVKit2.framework; sourceTree = "<group>"; };
 		A9CB295321461757004963C1 /* singleSmallLittleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = singleSmallLittleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CB295621461757004963C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A9CB295721461757004963C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -35,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94ED9EC2148F4D6008CAAC5 /* ZegoAVKit2.framework in Frameworks */,
 				A94ED9E72148C253008CAAC5 /* libc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +71,7 @@
 		A9CB294A21461757004963C1 = {
 			isa = PBXGroup;
 			children = (
+				A94ED9EB2148F4D6008CAAC5 /* ZegoAVKit2.framework */,
 				A9CB295521461757004963C1 /* singleSmallLittleProject */,
 				A9CB295421461757004963C1 /* Products */,
 				A94ED9E52148C253008CAAC5 /* Frameworks */,
@@ -93,6 +112,7 @@
 				A9CB294F21461757004963C1 /* Sources */,
 				A9CB295021461757004963C1 /* Frameworks */,
 				A9CB295121461757004963C1 /* Resources */,
+				A94ED9EE2148F4D6008CAAC5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -298,6 +318,10 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LZ6P43U8SJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/singleSmallLittleProject",
+				);
 				INFOPLIST_FILE = singleSmallLittleProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -316,6 +340,10 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LZ6P43U8SJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/singleSmallLittleProject",
+				);
 				INFOPLIST_FILE = singleSmallLittleProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

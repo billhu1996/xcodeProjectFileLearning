@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <ZegoAVKit2/ZegoLiveApi-advanced.h>
 
 @interface ViewController ()
 
@@ -16,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"zego version: %@", [ZegoLiveApi version2]);
     // Do any additional setup after loading the view, typically from a nib.
 }
 
