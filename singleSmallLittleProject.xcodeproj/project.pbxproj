@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A94ED9E72148C253008CAAC5 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A94ED9E62148C253008CAAC5 /* libc++.tbd */; };
 		A9CB295821461757004963C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CB295721461757004963C1 /* AppDelegate.m */; };
 		A9CB295B21461757004963C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CB295A21461757004963C1 /* ViewController.m */; };
 		A9CB295E21461757004963C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CB295C21461757004963C1 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A94ED9E62148C253008CAAC5 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		A9CB295321461757004963C1 /* singleSmallLittleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = singleSmallLittleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CB295621461757004963C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A9CB295721461757004963C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,17 +35,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94ED9E72148C253008CAAC5 /* libc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A94ED9E52148C253008CAAC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A94ED9E62148C253008CAAC5 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A9CB294A21461757004963C1 = {
 			isa = PBXGroup;
 			children = (
 				A9CB295521461757004963C1 /* singleSmallLittleProject */,
 				A9CB295421461757004963C1 /* Products */,
+				A94ED9E52148C253008CAAC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
